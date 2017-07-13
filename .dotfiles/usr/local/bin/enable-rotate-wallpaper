@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ -f /tmp/.disable-rotate-wallpaper ]; then
+    rm -rf /tmp/.disable-rotate-wallpaper
+fi
+
+exit 0

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo vim /etc/default/tlp
+sudo systemctl restart tlp

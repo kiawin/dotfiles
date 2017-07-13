@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+/opt/google/chrome/google-chrome "--profile-directory=Default" $@
+# /usr/local/bin/google-chrome "--profile-directory=Default" $@
+# /usr/bin/$CHROME "--force-device-scale-factor=2.0 --profile-directory=Profile 1" $@

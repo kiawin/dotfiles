@@ -1,0 +1,4 @@
+#!/bin/bash
+conky -c ~/.conky/.conkyrc &
+conky -c ~/.conky/.conkyrc_desc &
+conky -c ~/.conky/.conkyrc_weather

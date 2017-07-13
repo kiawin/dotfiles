@@ -1,0 +1,18 @@
+[Added Associations]
+application/pdf=evince.desktop;
+image/jpeg=shotwell.desktop;
+text/plain=leafpad.desktop;
+application/wps-office.pptx=libreoffice-impress.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+message/rfc822=thunderbird.desktop;
+
+[Default Applications]
+application/pdf=FoxitReader.desktop
+text/plain=leafpad.desktop
+application/wps-office.pptx=libreoffice-impress.desktop
+x-scheme-handler/nylas=nylas.desktop
+x-scheme-handler/tg=telegramdesktop.desktop
+x-scheme-handler/mailto=thunderbird.desktop
+message/rfc822=thunderbird.desktop
+application/ppdf=FoxitReader.desktop
+application/octet-stream=FoxitReader.desktop

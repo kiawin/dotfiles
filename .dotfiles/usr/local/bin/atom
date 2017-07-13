@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/usr/bin/atom --force-device-scale-factor=1.0

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo 'Kill Google Chrome!'
+kill -9 `ps ax | grep chrome/chrome | awk '{print $1}'` >/dev/null 2>&1
+#echo 'Job done'
+#echo ''
+      

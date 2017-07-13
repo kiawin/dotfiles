@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+if [ -z $1 ]; then
+  echo "USAGE:"
+  echo "set-git-config [onapp|kiawin]"
+  exit
+fi
+
+if [ -d .git ]; then
+  echo .git > /dev/null 2>&1
+else
+  git rev-parse --git-dir > /dev/null 2>&1;
+fi;
+
+if [ "$?" -eq "0" ]; then
+  echo "Setting git config - ${1} profile"
+  
+  if [ $1 == "onapp" ]; then
+    git config user.email "sianlerk.lau@onapp.com" && git config user.name "Sian Lerk Lau"
+  else
+    git config user.email "kiawin@gmail.com" && git config user.name "Sian Lerk Lau"
+  fi
+
+  echo "Done"
+else
+  echo "This is not a valid git repository"
+fi

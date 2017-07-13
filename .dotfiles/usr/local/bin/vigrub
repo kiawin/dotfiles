@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo vim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg

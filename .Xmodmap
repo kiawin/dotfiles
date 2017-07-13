@@ -1,0 +1,10 @@
+! Remap Alt-Right and PrintSc to Home and End
+! as x260 doesn't support Fn-Left and Fn-Right
+! Ref: https://superuser.com/questions/428945/defining-keyboard-shortcuts-involving-the-fn-key
+! Ref: http://www.thinkwiki.org/wiki/How_to_get_special_keys_to_work#xmodmap_configuration
+! Requires xmodmap ~/.Xmodmap during startup
+ 
+! state 0x0, keycode 108 (keysym 0xffea, Alt_R)
+! state 0x0, keycode 107 (keysym 0xff61, Print)
+keycode 108 = Home
+keycode 107 = End

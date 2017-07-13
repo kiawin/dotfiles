@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+vim ~/.config/tint2/chromeos.conf && restart-tint2

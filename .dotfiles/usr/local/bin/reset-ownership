@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#set -x
+NAME=$(id -un)
+sudo chown -R $NAME:$NAME .
+#set +x

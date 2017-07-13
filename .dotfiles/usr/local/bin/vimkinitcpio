@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo vim /etc/mkinitcpio.conf
+sudo mkinitcpio -p linux

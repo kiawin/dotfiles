@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+# Environment
+etc_hostname=$(hostname)
+if [ $etc_hostname == "kwXPS" ]; then
+  host='oA'
+elif [ $etc_hostname == "kw15RSE" ]; then
+  host='kw'
+elif [ $etc_hostname == "kwX260" ]; then
+  host='kwX'
+else
+  host=''
+fi
+
+PS1=''
+# User access
+if [[ $EUID == 0 ]]; then
+  PS1+='\[\e[1;31m\][root@$host] '
+else
+  PS1+='\[\e[1;35m\][$host] '
+fi
+
+# Git completion - __git_ps1
+source /usr/local/bin/git-prompt
+
+# Bash Prompt
+reset='\e[0m'
+abs_path='\w'
+rel_path='\W'
+username='\u'
+hostname='\h'
+
+# Colors
+yellow='\e[0;33m'       # Yellow
+green='\e[0;32m'        # Green
+blue='\e[0;34m'         # Blue
+bold_blue='\e[1;34m'    # Blue (Bold)
+bold_red='\e\[1;31m'	# Red (Bold)
+bold_pink='\e\[1;35m'	# Pink (Bold)
+
+#PS1=$green$rel_path $yellow$(__git_ps1) $reset
+PS1+='\[\e[0;33m\]\W\[\e[0;32m\]$(__git_ps1) \[\e[0m\]'

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+shutter $1 -e --disable_systray --min_at_startup -C -d 0 -n

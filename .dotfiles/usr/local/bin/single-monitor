@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Ref: https://wiki.archlinux.org/index.php/HiDPI#Multiple_displays
+# xrandr --output eDP1 --auto --output HDMI1 --auto --panning 3840x2160+3840+0 --scale 2x2 --right-of eDP1
+
+xrandr --output HDMI1 --off

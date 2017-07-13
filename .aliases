@@ -1,0 +1,25 @@
+# Aliases
+alias pcmanfm='dbus-launch pcmanfm'
+alias cp="cp --reflink=auto"
+alias rm="rm -i"
+alias pssh="pssh -h ~/host.txt -l root -P"
+alias dockerps="docker ps"
+alias update="yaourt -Syu --noconfirm --aur"
+alias add-key="gpg --recv-keys --keyserver hkp://pgp.mit.edu"
+alias update-keys="sudo pacman-key --refresh-keys"
+
+## Bash Alias with parameter support
+## Ref: http://stackoverflow.com/a/7131683/1259696
+
+# Get ASN from IP
+get_asn() {
+    whois -h whois.cymru.com " -v $1"
+}
+alias asn=get_asn
+
+# virtualenv
+get_ve() {
+    source /home/sianlerk/Projects/virtualenv/$1/bin/activate
+}
+alias ve=get_ve
+

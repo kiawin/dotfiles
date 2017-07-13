@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="media-menu" label="Media">
+  <item label="Radio Player">
+    <action name="Execute">
+      <command>chromeapp --app="https://beta.tunein.com"</command>
+    </action>
+  </item>
+  <item label="Media Player">
+    <action name="Execute">
+      <command>vlc</command>
+    </action>
+  </item>
+  <item label="Music Player">
+    <action name="Execute">
+      <command>spotify</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Gamebox">
+    <action name="Execute">
+      <command>steam</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="network-menu" label="Network">
+    <item label="Thunderbird">
+        <action name="Execute">
+            <command>thunderbird</command>
+        </action>
+    </item>
+    <item label="Tweetdeck">
+        <action name="Execute">
+            <command>chromeapp --app="https://tweetdeck.twitter.com"</command>
+        </action>
+    </item>
+    <separator/>
+    <item label="Hipchat">
+        <action name="Execute">
+            <command>hipchat4</command>
+        </action>
+    </item>
+    <item label="Hangout">
+        <action name="Execute">
+            <command>chromeapp --app-id=knipolnnllmklapflnccelgolnpehhpl</command>
+        </action>
+    </item>
+    <separator/>
+    <item label="Telegram">
+        <action name="Execute">
+            <command>telegram-desktop</command>
+        </action>
+    </item>
+    <item label="WhatsApp">
+        <action name="Execute">
+            <command>chromeapp --app="https://web.whatsapp.com"</command>
+        </action>
+    </item>
+    <item label="LINE">
+        <action name="Execute">
+            <command>chromeapp --app-id=menkifleemblimdogmoihpfopnplikde</command>
+        </action>
+    </item>
+</menu>
+
+<menu id="productivity-menu" label="Productivity">
+    <item label="Kin">
+        <action name="Execute">
+            <command>chromeapp --app="https://calendar.kin.today"</command>
+        </action>
+    </item>
+    <item label="Cal">
+        <action name="Execute">
+            <command>chromeapp --app-id=magodclodecbbnbdfpmoehfdddkhlfmm</command>
+        </action>
+    </item>
+    <item label="todoist">
+        <action name="Execute">
+            <command>chromeapp --app="https://todoist.com/app?lang=en&v=819#agenda%2Foverdue%2C%20today"</command>
+        </action>
+    </item>
+    <separator/>
+    <item label="Simplenote">
+        <action name="Execute">
+            <command>simplenote</command>
+        </action>
+    </item>
+    <item label="Evernote">
+        <action name="Execute">
+            <command>chromeapp --app="https://www.evernote.com/Home.action"</command>
+        </action>
+    </item>
+    <item label="Libre">
+        <action name="Execute">
+            <command>libreoffice</command>
+        </action>
+    </item>
+    <separator/>
+    <item label="Google Inbox">
+        <action name="Execute">
+            <command>chromeapp --app-id=ajjmenfgmbpceneffopmikhahnkeebje</command>
+        </action>
+    </item>
+    <item label="Google Drive">
+        <action name="Execute">
+            <command>chromeapp --app="https://drive.google.com/drive/u/0/my-drive"</command>
+        </action>
+    </item>
+    <item label="Google Finance">
+        <action name="Execute">
+            <command>chromeapp --app-id="fcgckldmmjdbpdejkclmfnnnehhocbfp"</command>
+        </action>
+    </item>
+</menu>
+
+<menu id="work-menu" label="Work">
+    <item label="Intellij">
+        <action name="Execute">
+            <command>idea.sh</command>
+        </action>
+    </item>
+    <item label="PyCharm">
+        <action name="Execute">
+            <command>pycharm</command>
+        </action>
+    </item>
+    <item label="Webstorm">
+        <action name="Execute">
+            <command>webstorm</command>
+        </action>
+    </item>
+    <item label="Atom">
+        <action name="Execute">
+            <command>atom</command>
+        </action>
+    </item>
+    <separator/>
+    <item label="Virtualbox">
+        <action name="Execute">
+            <command>virtualbox</command>
+        </action>
+    </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Set Openbox">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Set LXappearance">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Set Power Management">
+    <action name="Execute">
+      <command>xfce4-power-manager-settings</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator/>
+  <item label="Set Wallpaper">
+    <action name="Execute">
+      <command>nitrogen</command>
+    </action>
+  </item>
+  <item label="Get Wallpaper">
+    <action name="Execute">
+      <command>love-wallpaper</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Manage Notifications">
+    <action name="Execute">
+      <command>xfce4-notifyd-config</command>
+    </action>
+  </item>
+  <item label="Manage Screensaver">
+    <action name="Execute">
+      <command>xscreensaver-demo</command>
+    </action>
+  </item>
+  <item label="Manage Screen">
+    <action name="Execute">
+      <command>lxrandr</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Manage Printers">
+    <action name="Execute">
+      <command>xdg-open http://localhost:631/</command>
+      <startupnotify>
+        <enabled>no</enabled>
+        <icon>cups</icon>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reset tint2">
+    <action name="Execute">
+      <command>restart-tint2</command>
+    </action>
+  </item>
+  <item label="Reset Conky">
+    <action name="Execute">
+      <command>restart-conky</command>
+    </action>
+  </item>
+  <item label="Reset Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="daily-menu" label="Daily">
+  <item label="Word Live">
+    <action name="Execute">
+      <command>chromeapp --app="https://www.wordlive.org/Session"</command>
+    </action>
+  </item>
+  <item label="Bible Reader">
+    <action name="Execute">
+      <command>chromeapp --app-id="adplcelpohamiijahbaanmoimmnoaiaf"</command>
+    </action>
+  </item>
+  <separator/>
+  <item label="Safari Online">
+    <action name="Execute">
+      <command>chromeapp --app="https://www.safaribooksonline.com/s/"</command>
+    </action>
+  </item>
+  <item label="Feedly">
+    <action name="Execute">
+      <command>chromeapp --app="https://www.feedly.com"</command>
+    </action>
+  </item>
+  <item label="Kindle Reader">
+    <action name="Execute">
+      <command>chromeapp --app="https://read.amazon.com"</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal">
+    <action name="Execute">
+      <command>urxvtc</command>
+    </action>
+  </item>
+  <item label="File Manager">
+    <action name="Execute">
+      <command>dbus-launch pcmanfm</command>
+    </action>
+  </item>
+  <item label="Web Browser">
+    <action name="Execute">
+      <command>google-chrome</command>
+    </action>
+  </item>
+  <separator/>
+  <menu id="daily-menu"/>
+  <menu id="productivity-menu"/>
+  <menu id="work-menu"/>
+  <separator/>
+  <menu id="media-menu"/>
+  <menu id="network-menu"/>
+  <separator/>
+  <menu id="system-menu"/>
+  <separator/>
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

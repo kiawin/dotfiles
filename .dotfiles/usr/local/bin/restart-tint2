@@ -1,0 +1,4 @@
+#!/bin/bash
+(killall -e tint2) &
+(sleep 1s && tint2 -c ~/.config/tint2/chromeos.conf) & 
+(sleep 1s && exit)

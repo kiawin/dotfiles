@@ -1,0 +1,8 @@
+[user]
+	email = kiawin@gmail.com
+	name = Sian Lerk Lau
+[alias]
+	co = checkout
+    br = branch
+    ci = commit
+    st = status

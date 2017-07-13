@@ -1,0 +1,67 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+
+# Compton
+(compton --config ~/.config/compton/compton.conf -b && sleep 2s) &
+
+# Power Management
+xfce4-power-manager &
+
+# Clipboard
+if [ -x /usr/bin/autocutsel ]; then 
+    #this will keep the clipboard in sync 
+    #   with the primary buffer 
+    autocutsel -selection CLIPBOARD -fork
+    #this will keep the primary in sync 
+    #   with the clipboard buffer 
+    autocutsel -selection PRIMARY -fork 
+fi
+
+# Network Manager
+(nm-applet && sleep 2s) &
+
+# Tint2 Panel
+tint2 -c ~/.config/tint2/chromeos.conf &
+
+# Screensaver
+# Note: Let xfce4-power-manager handles all
+#       Just missing screenlock feature
+xscreensaver -no-splash &
+
+# Turn off system beep
+xset b off &
+
+# Wallpaper
+(nitrogen --restore && sleep 2s && rotate-wallpaper) &
+
+# Load urxvt
+(sleep 3s && irxvtc) &
+# (sleep 2s && wmctrl -ri $(wmctrl -l | grep -m1 "sianlerk@kwX240" | cut -d' ' -f1) -b add,maximized_vert,maximized_horz) &
+
+# Load Dropbox
+(sleep 1s && dropbox) &
+
+# Load Redshift
+(sleep 1s && redshift-gtk) &
+
+# Load Shutter
+(sleep 1s && shutter --min_at_startup) &
+
+# Set display and brightness
+(sleep 1s && xrandr --output eDP1 --auto --brightness 0.9) &
+

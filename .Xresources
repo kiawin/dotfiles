@@ -1,0 +1,106 @@
+##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
+##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
+##### PROCEED WITH CAUTION! #####
+
+Xmessage*background:          #000000
+!#002b36
+Xmessage*foreground:          #839496
+
+URxvt*colorUL:                #859900
+URxvt*colorBD:                #268bd2
+URxvt*color1:                 #dc322f
+URxvt*color9:                 #cb4b16
+URxvt*color2:                 #859900
+URxvt*color3:                 #b58900
+URxvt*color4:                 #268bd2
+URxvt*color5:                 #d33682
+URxvt*color13:                #6c71c4
+URxvt*color6:                 #2aa198
+
+URxvt*background:             #000000
+!#002b36
+URxvt*foreground:             #839496
+URxvt*fadeColor:              #000000
+!#002b36
+URxvt*cursorColor:            #93a1a1
+URxvt*pointerColorBackground: #586e75
+URxvt*pointerColorForeground: #93a1a1
+URxvt*scrollColor:            #657b83
+URxvt*borderColor:            #000000
+!#002b36
+URxvt*color0:                 #073642
+URxvt*color8:                 #839496
+URxvt*color10:                #586e75
+URxvt*color11:                #657b83
+URxvt*color12:                #839496
+URxvt*color14:                #93a1a1
+URxvt*color7:                 #eee8d5
+URxvt*color15:                #fdf6e3
+
+!! special colors
+!*.foreground:  #a39e9b
+!*.background:  #000000
+!!#2f1e2e
+!*.cursorColor:  #a39e9b
+!! black
+!*.color0:      #2f1e2e
+!*.color8:      #776e71
+!! red
+!*.color1:      #ef6155
+!*.color9:      #ef6155
+!! green
+!*.color2:      #48b685
+!*.color10:     #48b685
+!! yellow
+!*.color3:      #fec418
+!*.color11:     #fec418
+!! blue
+!*.color4:      #06b6ef
+!*.color12:     #06b6ef
+!! magenta
+!*.color5:      #815ba4
+!*.color13:     #815ba4
+!! cyan
+!*.color6:      #5bc4bf
+!*.color14:     #5bc4bf
+!! white
+!*.color7:      #a39e9b
+!*.color15:     #e7e9db
+!! Background
+!*.color16:     #000000
+
+
+
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
+
+URxvt*transparent:       false
+
+URxvt.font: xft:Source Code Pro:style=medium:size=11,xft:WenQuanYi Micro Hei Mono:size=11
+URxvt*boldFont : xft:Source Code Pro:style=bold:size=11,xft:WenQuanYi Micro Hei Mono:size=11
+URxvt.letterSpace: 0
+
+*antialias:  true
+*autohint:   false
+
+URxvt*title: GOOD DAY
+URxvt*loginShell: true
+URxvt.perl-ext-common: default,matcher,tabbedex,resize-font,url-select,vtwheel
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+! tabbedex
+!URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.title-bg: 16
+URxvt.tabbed.tabbar-bg: 16
+
+! Resize Font (git)
+! Ref: https://github.com/simmel/urxvt-resize-font/blob/master/resize-font#L25
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font:bigger
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.iconFile: /usr/share/icons/Adwaita/scalable/apps/utilities-terminal-symbolic.svg

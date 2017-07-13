@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+vim ~/.Xresources && xrdb -merge ~/.Xresources
+sudo systemctl restart urxvtd@sianlerk.service

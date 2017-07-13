@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [ -z $1 ]; then
+    echo "Usage:"
+    echo "dockerssh <container_name>"
+fi
+
+container_id=$(docker ps | grep $1 | awk '{print $1}')
+
+echo "SSH: Connecting $1 ($container_id)"
+docker exec -i -t $container_id /bin/bash

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if [ -e /tmp/.disable-rotate-wallpaper ]; then
+    exit 0
+fi
+
+WALLPAPERS="$HOME/Wallpaper"
+ALIST=( `ls -w1 $WALLPAPERS` )
+RANGE=${#ALIST[@]}
+let "number = $RANDOM"
+let LASTNUM="`cat /tmp/.last-wallpaper` + $number"
+let "number = $LASTNUM % $RANGE"
+echo $number > /tmp/.last-wallpaper
+nitrogen --set-scaled --save $WALLPAPERS/${ALIST[$number]}
