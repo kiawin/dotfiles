@@ -7,7 +7,11 @@ if [ $# -gt 0 ]; then
     ENTRYPOINT="--entrypoint $@"
 fi
 
-xhost +
+# docker pull jerivas/popcorntime
+
+# Ref: https://stackoverflow.com/questions/28392949/running-chromium-inside-docker-gtk-cannot-open-display-0
+# Ref: https://stackoverflow.com/questions/28392949/running-chromium-inside-docker-gtk-cannot-open-display-0/34586732#34586732
+xhost local:root
 
 docker run \
     -it --rm \
