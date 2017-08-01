@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Enable virtual display (on the right of extended desktop) to be chromecasted
+# Require enablement of chrome media router
+# Ref: chrome://flags/#media-router
+
+xrandr --addmode VIRTUAL1 1366x768
+xrandr --output VIRTUAL1 --mode 1366x768 --right-of eDP1
