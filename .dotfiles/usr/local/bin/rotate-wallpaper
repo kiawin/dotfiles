@@ -4,7 +4,7 @@ if [ -e /tmp/.disable-rotate-wallpaper ]; then
     exit 0
 fi
 
-WALLPAPERS="$HOME/Wallpaper"
+WALLPAPERS="$HOME/Wallpapers"
 ALIST=( `ls -w1 $WALLPAPERS` )
 RANGE=${#ALIST[@]}
 let "number = $RANDOM"

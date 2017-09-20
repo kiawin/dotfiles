@@ -18,6 +18,7 @@ docker run \
     --net host \
     --memory 512mb \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
+    -v /dev/snd:/dev/snd \
     -e DISPLAY=unix$DISPLAY \
     --device /dev/snd \
     --device /dev/dri \
