@@ -7,6 +7,7 @@ alias dockerps="docker ps"
 alias update="yaourt -Syu --noconfirm --aur"
 alias add-key="gpg --recv-keys --keyserver hkp://pgp.mit.edu"
 alias update-keys="sudo pacman-key --refresh-keys"
+alias mount-iso="udisksctl loop-setup -r -f"
 
 ## Bash Alias with parameter support
 ## Ref: http://stackoverflow.com/a/7131683/1259696

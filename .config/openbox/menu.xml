@@ -19,6 +19,12 @@
     </action>
   </item>
   <separator/>
+  <item label="Gradio">
+    <action name="Execute">
+      <command>gradio</command>
+    </action>
+  </item>
+  <separator/>
   <item label="Gamebox">
     <action name="Execute">
       <command>steam</command>
