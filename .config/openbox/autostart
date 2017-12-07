@@ -60,7 +60,7 @@ xset b off &
 (sleep 1s && redshift-gtk) &
 
 # Load Shutter
-(sleep 1s && shutter --min_at_startup) &
+# (sleep 1s && shutter --min_at_startup) &
 
 # Set display and brightness
 (sleep 1s && xrandr --output eDP1 --auto --brightness 0.9) &

@@ -44,6 +44,11 @@
         </action>
     </item>
     <separator/>
+    <item label="Slack">
+        <action name="Execute">
+            <command>slack</command>
+        </action>
+    </item>
     <item label="Hipchat">
         <action name="Execute">
             <command>hipchat4</command>
@@ -261,6 +266,11 @@
   <item label="File Manager">
     <action name="Execute">
       <command>dbus-launch pcmanfm</command>
+    </action>
+  </item>
+  <item label="Firefox Quantum">
+    <action name="Execute">
+      <command>firefox</command>
     </action>
   </item>
   <item label="Web Browser">
