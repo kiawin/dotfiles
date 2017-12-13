@@ -52,3 +52,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # display hack
 export DISPLAY=:0.0
+
+# java
+export JAVA_HOME=/usr/lib/jvm/default
