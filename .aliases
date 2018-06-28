@@ -2,12 +2,12 @@
 alias pcmanfm='dbus-launch pcmanfm'
 alias cp="cp --reflink=auto"
 alias rm="rm -i"
-alias pssh="pssh -h ~/host.txt -l root -P"
 alias dockerps="docker ps"
 alias update="yaourt -Syu --noconfirm --aur"
 alias add-key="gpg --recv-keys --keyserver hkp://pgp.mit.edu"
 alias update-keys="sudo pacman-key --refresh-keys"
 alias mount-iso="udisksctl loop-setup -r -f"
+alias keys="gpg --list-secret-keys --keyid-format LONG"
 
 ## Bash Alias with parameter support
 ## Ref: http://stackoverflow.com/a/7131683/1259696

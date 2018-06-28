@@ -16,6 +16,7 @@ else
 set expandtab
 endif
 
+set pastetoggle=<F1>
 set tabstop=4 " tab spaces
 set shiftwidth=4 " shift spaces
 "set softtabstop=4 " tab spaces for \t

@@ -49,6 +49,11 @@
             <command>slack</command>
         </action>
     </item>
+    <item label="Stride">
+        <action name="Execute">
+            <command>stride</command>
+        </action>
+    </item>
     <item label="Hipchat">
         <action name="Execute">
             <command>hipchat4</command>
@@ -130,7 +135,7 @@
 <menu id="work-menu" label="Work">
     <item label="Intellij">
         <action name="Execute">
-            <command>idea.sh</command>
+            <command>idea-ce-eap</command>
         </action>
     </item>
     <item label="PyCharm">

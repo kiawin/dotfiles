@@ -22,6 +22,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+if [ -f ~/.work-aliases ]; then
+    . ~/.work-aliases
+fi
+
 # Docker Bash aliases
 # Ref: https://raw.githubusercontent.com/jessfraz/dotfiles/master/.dockerfunc
 # if [ -f ~/.dockerfunc ]; then

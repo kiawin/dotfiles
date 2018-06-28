@@ -1,8 +1,10 @@
 [user]
-	email = kiawin@gmail.com
-	name = Sian Lerk Lau
+    email = kiawin@gmail.com
+    name = Sian Lerk Lau
 [alias]
-	co = checkout
+    co = checkout
     br = branch
     ci = commit
     st = status
+[commit]
+    gpgsign = true
