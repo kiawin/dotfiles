@@ -3,7 +3,7 @@
 # Environment
 etc_hostname=$(hostname)
 if [ $etc_hostname == "kwXPS" ]; then
-  host='oA'
+  host='jpt'
 elif [ $etc_hostname == "kw15RSE" ]; then
   host='kw'
 elif [ $etc_hostname == "kwX260" ]; then

@@ -3,11 +3,17 @@ alias pcmanfm='dbus-launch pcmanfm'
 alias cp="cp --reflink=auto"
 alias rm="rm -i"
 alias dockerps="docker ps"
-alias update="yaourt -Syu --noconfirm --aur"
+#alias update="yaourt -Syu --noconfirm --aur"
+alias update="yay -Syu --noconfirm"
 alias add-key="gpg --recv-keys --keyserver hkp://pgp.mit.edu"
-alias update-keys="sudo pacman-key --refresh-keys"
+alias update-keys="sudo pacman -S archlinux-keyring" # sudo pacman-key --refresh-keys"
 alias mount-iso="udisksctl loop-setup -r -f"
 alias keys="gpg --list-secret-keys --keyid-format LONG"
+alias vpn-start="sudo systemctl start openvpn-client@sianlerk.service"
+alias vpn-stop="sudo systemctl stop openvpn-client@sianlerk.service"
+alias vpn-status="sudo systemctl status openvpn-client@sianlerk.service"
+alias cgrep="grep --color=always"
+alias less="less -R"
 
 ## Bash Alias with parameter support
 ## Ref: http://stackoverflow.com/a/7131683/1259696
@@ -24,3 +30,14 @@ get_ve() {
 }
 alias ve=get_ve
 
+# work
+get_repo() {
+    WORK_DIR=/home/sianlerk/Projects/jewel/JPT-CAP-Avengers/repositories
+    cd $WORK_DIR/$(ls $WORK_DIR | grep -i $1 | head -n 1)
+}
+alias repo=get_repo
+get_work() {
+    WORK_DIR=/home/sianlerk/Projects/jewel
+    cd $WORK_DIR/$(ls $WORK_DIR | grep -i $1 | head -n 1)
+}
+alias work=get_work

@@ -59,3 +59,9 @@ export DISPLAY=:0.0
 
 # java
 export JAVA_HOME=/usr/lib/jvm/default
+
+# encoding
+export LC_CTYPE=en_US.UTF-8
+
+# default browser
+# export BROWSER="firefox"

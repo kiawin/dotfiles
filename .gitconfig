@@ -1,6 +1,7 @@
 [user]
     email = kiawin@gmail.com
     name = Sian Lerk Lau
+    signingkey = F007DC9FEEC4566DAC12E73299080F45AC6567F5
 [alias]
     co = checkout
     br = branch

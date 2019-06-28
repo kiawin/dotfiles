@@ -6,5 +6,6 @@
  
 ! state 0x0, keycode 108 (keysym 0xffea, Alt_R)
 ! state 0x0, keycode 107 (keysym 0xff61, Print)
+! state 0x0, keycode 135 (keysym 0xff67, Menu)
 keycode 108 = Home
-keycode 107 = End
+keycode 135 = End

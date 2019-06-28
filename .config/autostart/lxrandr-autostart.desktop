@@ -2,5 +2,5 @@
 Type=Application
 Name=LXRandR autostart
 Comment=Start xrandr with settings done in LXRandR
-Exec=sh -c 'xrandr --output eDP1 --auto'
+Exec=sh -c 'xrandr --output DP1 --auto --output eDP1 --mode 3840x2160 --rate 60.00 --same-as DP1'
 OnlyShowIn=LXDE

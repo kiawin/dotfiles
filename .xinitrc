@@ -35,6 +35,12 @@ export XMODIFIERS="@im=fcitx"
 # dbus-update-activation-environment --all
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
+# Set touchpad speed to 0.8 instead of 0
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Accel Speed' 0.8
+
+# Enable touchpad tapping
+xinput set-prop 'DELL07E6:00 06CB:76AF Touchpad' 'libinput Tapping Enabled' 1
+
 # Remap keys
 xmodmap ~/.Xmodmap
 

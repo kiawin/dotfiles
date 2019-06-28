@@ -2,6 +2,31 @@
 ##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
 ##### PROCEED WITH CAUTION! #####
 
+! For HiDPI screen - urxvt
+Xft.dpi: 240
+Xft.autohint: 0
+Xft.lcdfilter: lcdfilter
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! term name
+XTerm*termName: xterm-256color
+URxvt*termName: rxvt-unicode
+
+! For HiDPI screen - Xscreensaver
+xscreensaver.Dialog.headingFont: -*-dejavu sans mono-bold-r-*-*-0-200-144-144-*-*-*-*
+xscreensaver.Dialog.bodyFont: -*-dejavu sans mono-medium-r-*-*-0-120-144-144-*-*-*-*
+xscreensaver.Dialog.labelFont: -*-dejavu sans mono-medium-r-*-*-0-120-144-144-*-*-*-*
+xscreensaver.Dialog.unameFont: -*-dejavu sans mono-medium-r-*-*-0-120-144-144-*-*-*-*
+xscreensaver.Dialog.buttonFont: -*-dejavu sans mono-bold-r-*-*-0-120-144-144-*-*-*-*
+xscreensaver.Dialog.dateFont: -*-dejavu sans mono-medium-r-*-*-0-120-144-144-*-*-*-*
+xscreensaver.passwd.passwdFont: -*-dejavu sans mono-bold-r-*-*-0-120-144-144-*-*-*-*
+
+! Save scroll buffer / history
+urxvt.saveLines: 1000000
+
 Xmessage*background:          #000000
 !#002b36
 Xmessage*foreground:          #839496
@@ -77,9 +102,9 @@ URxvt*scrollBar_right:   false
 URxvt*transparent:       false
 
 !URxvt.font: xft:Source Code Pro:style=medium:size=8
-URxvt.font: xft:SauceCodePro Nerd Font Mono:style=medium:size=11,xft:WenQuanYi Micro Hei Mono:size=11
+URxvt.font: xft:SauceCodePro Nerd Font Mono:style=medium:size=14,xft:WenQuanYi Micro Hei Mono:size=14
 !URxvt*boldFont : xft:Source Code Pro:style=bold:size=8
-URxvt*boldFont : xft:SauceCodePro Nerd Font Mono:style=bold:size=11,xft:WenQuanYi Micro Hei Mono:size=11
+URxvt*boldFont : xft:SauceCodePro Nerd Font Mono:style=bold:size=14,xft:WenQuanYi Micro Hei Mono:size=14
 URxvt.letterSpace: 0
 
 *antialias:  true
