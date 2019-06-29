@@ -59,3 +59,14 @@ export DISPLAY=:0.0
 
 # java
 export JAVA_HOME=/usr/lib/jvm/default
+
+# Load pyenv automatically by adding
+# the following to ~/.bashrc:
+
+export PATH="/home/sianlerk/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# xz multiprocessing
+export XZ_DEFAULTS="-T 0"
+

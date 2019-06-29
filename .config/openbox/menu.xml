@@ -133,6 +133,11 @@
 </menu>
 
 <menu id="work-menu" label="Work">
+    <item label="Code">
+        <action name="Execute">
+            <command>code</command>
+        </action>
+    </item>
     <item label="Intellij">
         <action name="Execute">
             <command>idea-ce-eap</command>

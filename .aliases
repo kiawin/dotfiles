@@ -2,8 +2,10 @@
 alias pcmanfm='dbus-launch pcmanfm'
 alias cp="cp --reflink=auto"
 alias rm="rm -i"
+alias cgrep="grep --color=always"
+alias less="less -R"
 alias dockerps="docker ps"
-alias update="yaourt -Syu --noconfirm --aur"
+alias update="yay -Syu --noconfirm"
 alias add-key="gpg --recv-keys --keyserver hkp://pgp.mit.edu"
 alias update-keys="sudo pacman-key --refresh-keys"
 alias mount-iso="udisksctl loop-setup -r -f"

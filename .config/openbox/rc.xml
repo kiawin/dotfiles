@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Simple</name>
+    <name>Triste-Violet</name>
     <titleLayout>DIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -153,7 +153,7 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
   <margins>
-    <top>0</top>
+    <top>18</top>
     <bottom>26</bottom>
     <left>0</left>
     <right>0</right>
@@ -863,19 +863,10 @@
 
   # end of the example
 -->
-    <application name="www.evernote.com*">
-      <decor>yes</decor>
-      <maximized>true</maximized>
-    </application>
-    <application name="trello.com">
-      <decor>yes</decor>
-      <maximized>true</maximized>
+    <application class="*">
+      <maximized>yes</maximized>
     </application>
     <application name="Spotify*">
-      <decor>no</decor>
-      <maximized>true</maximized>
-    </application>
-    <application name="LINE">
       <decor>no</decor>
       <maximized>true</maximized>
     </application>

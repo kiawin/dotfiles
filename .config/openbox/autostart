@@ -38,6 +38,9 @@ fi
 # Tint2 Panel
 tint2 -c ~/.config/tint2/chromeos.conf &
 
+# Conky Panel
+conky -c ~/.config/conky/topbar.new.conf &
+
 # Screensaver
 # Note: Let xfce4-power-manager handles all
 #       Just missing screenlock feature
@@ -57,11 +60,14 @@ xset b off &
 (sleep 1s && dropbox) &
 
 # Load Redshift
-(sleep 1s && redshift-gtk) &
+# (sleep 1s && redshift-gtk) &
 
 # Load Shutter
 # (sleep 1s && shutter --min_at_startup) &
 
 # Set display and brightness
 (sleep 1s && xrandr --output eDP1 --auto --brightness 0.9) &
+
+# Update wallpaper
+(/usr/local/bin/unsplash-wallpaper) &
 

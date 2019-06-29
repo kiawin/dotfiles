@@ -14,12 +14,9 @@ fi
 eval $(dircolors $HOME/.dir_colors/dircolors.monokai)
 
 # Enable ssh agent forwarding
-eval $(keychain --eval --agents ssh -Q --quiet /home/sianlerk/.ssh/id_rsa.onapp)
+eval $(keychain --eval --agents ssh -Q --quiet /home/sianlerk/.ssh/google_compute_engine)
 if [[ $(ssh-add -l | grep ED25519 | wc -l) == 0 ]]; then
     ssh-add /home/sianlerk/.ssh/id_ed25519.github
-fi
-if [[ $(ssh-add -l | grep google_compute_engine | wc -l) == 0 ]]; then
-    ssh-add /home/sianlerk/.ssh/google_compute_engine
 fi
 
 # Enable rvm

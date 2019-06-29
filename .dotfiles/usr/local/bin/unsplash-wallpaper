@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+/usr/bin/wget -O /home/sianlerk/Wallpapers/wallpaper.jpg https://unsplash.it/1366/768/?random
+cp /home/sianlerk/Wallpapers/wallpaper.jpg /home/sianlerk/Wallpapers/unsplash/$(date +"%m%d%Y-%H%M%S").jpg
+/usr/bin/nitrogen --set-scaled --save /home/sianlerk/Wallpapers/wallpaper.jpg
+
